@@ -1,18 +1,20 @@
 #!/bin/bash
-echo "antras" >> main.txt
+git switch -c trecias
+
+echo "trecias" >> main.txt
 
 git add .
 
-git commit -m "Šaka antras"
+git commit -m "Šaka trecias"
 
-git push -u origin antras
+git push -u origin trecias
 
 git switch main
 
-git merge antras
+git merge trecias
 
 git push
 
-git branch -d antras
+git branch -d trecias
 
-git push origin --delete antras
+git push origin --delete trecias
